@@ -4,14 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% block title %} BlogEvent {% endblock %}</title>
+    <title>{% block title %} Lautaro Boffi {% endblock %}</title>
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
     <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-          <div class="logo">&lt;/&gt;</div>
+          <a class="logo" href="{% url 'backoffice' %}">&lt;/&gt;</a>
+          <!-- <div class="logo">&lt;/&gt;</div> -->
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
               <li class="nav-item">

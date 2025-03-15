@@ -5,7 +5,7 @@ class user(models.Model):
     email = models.EmailField(unique=True)
 
     class Meta:
-        app_label = 'BlogEvent'
+        app_label = 'mywebcv'
 
     def __str__(self):
         return f"{self.name} {self.lastname}"

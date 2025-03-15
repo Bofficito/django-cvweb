@@ -23,13 +23,14 @@ ALLOWED_HOSTS = ['127.0.0.1', 'localhost']
 # Application definition
 
 INSTALLED_APPS = [
-    'BlogEvent',
+    'mywebcv',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'backoffice'
 ]
 
 MIDDLEWARE = [
@@ -42,13 +43,13 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'BlogEvent.urls'
+ROOT_URLCONF = 'mywebcv.urls'
 
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
-            BASE_DIR / 'BlogEvent/templates',
+            BASE_DIR / 'mywebcv/templates',
         ],
         'APP_DIRS': True,
         'OPTIONS': {
@@ -62,7 +63,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'BlogEvent.wsgi.application'
+WSGI_APPLICATION = 'mywebcv.wsgi.application'
 
 
 # Database

@@ -40,10 +40,3 @@ def submit_form(request):
         )
 
     return render(request, "submit.html")
-
-# @login_required
-# @permission_required('BlogEvent.can_edit_content', raise_exception=True)
-def backoffice(request):
-    return render(request, 'backoffice/page.html')
-def add_certificate(request):
-    return render(request, 'backoffice/add_certificate.html')
